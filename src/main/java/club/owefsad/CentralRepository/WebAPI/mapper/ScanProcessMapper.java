@@ -1,7 +1,9 @@
 package club.owefsad.CentralRepository.WebAPI.mapper;
 
 import club.owefsad.CentralRepository.WebAPI.entity.ScanProcess;
+import org.apache.ibatis.annotations.Mapper;
 
+@Mapper
 public interface ScanProcessMapper {
 
     /**

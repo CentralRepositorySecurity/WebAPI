@@ -26,6 +26,6 @@ public class AuthController {
         if (loginUser == null) {
             return "login failed";
         }
-        return "login success, uid: ";// + loginUser.getId();
+        return "login success, uid: " + loginUser.getId();
     }
 }

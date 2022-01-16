@@ -19,14 +19,14 @@ public class ProcessController {
     @ResponseBody
     public String count() {
         int counts = service.counts();
-        return "";
+        return ""+counts;
     }
 
     @GetMapping("/count/{state}")
     @ResponseBody
     public String countByState(@PathVariable("state") String state) {
         int counts = service.countByState(state);
-        return "";
+        return ""+counts;
     }
 
 

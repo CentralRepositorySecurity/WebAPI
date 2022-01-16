@@ -2,14 +2,14 @@ package club.owefsad.CentralRepository.WebAPI.entity;
 
 public class User {
 
-    int id;
+    Integer id;
     String username;
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
@@ -37,7 +37,7 @@ public class User {
         this.createTime = (int) (createTime / 1000);
     }
 
-    public int getLoginTime() {
+    public Integer getLoginTime() {
         return loginTime;
     }
 
@@ -46,6 +46,6 @@ public class User {
     }
 
     String password;
-    int createTime;
-    int loginTime;
+    Integer createTime;
+    Integer loginTime;
 }

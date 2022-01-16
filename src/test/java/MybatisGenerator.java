@@ -15,7 +15,7 @@ public class MybatisGenerator {
 
         List<String> warnings = new ArrayList<>();
         //指定 逆向工程配置文件
-        File configFile = new File("src/main/resources/generatorConfig.xml");
+        File configFile = new File("src/test/resources/generatorConfig.xml");
         ConfigurationParser cp = new ConfigurationParser(warnings);
         Configuration config = cp.parseConfiguration(configFile);
         DefaultShellCallback callback = new DefaultShellCallback(false);
