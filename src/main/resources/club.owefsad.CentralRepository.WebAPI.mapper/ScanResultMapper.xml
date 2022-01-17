@@ -179,7 +179,7 @@
         update_time = #{updateTime,jdbcType=BIGINT}
         where id = #{id,jdbcType=INTEGER}
     </update>
-    <select id="list" parameterType="club.owefsad.CentralRepository.WebAPI.entity.ScanResult" resultType="club.owefsad.CentralRepository.WebAPI.entity.ScanResult">
+    <select id="list" parameterType="club.owefsad.CentralRepository.WebAPI.entity.ScanResult" resultMap="BaseResultMap">
         select
         <include refid="Base_Column_List"/>
         from scan_result
