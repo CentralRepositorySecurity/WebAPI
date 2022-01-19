@@ -22,4 +22,20 @@ public class ScanResultServiceImpl implements IScanResultService {
         PageHelper.startPage(page, pageSize);
         return mapper.list(record);
     }
+
+    @Override
+    public Integer todayRecord() {
+        return mapper.todayRecord();
+    }
+
+    @Override
+    public Integer totalRecord() {
+        return mapper.totalRecord();
+    }
+
+    @Override
+    public Integer updateRecordState(ScanResult record) {
+        record.setUpdateTime(System.currentTimeMillis());
+        return mapper.updateRecordState(record);
+    }
 }

@@ -50,4 +50,10 @@ public interface ScanResultMapper {
     int updateByPrimaryKey(ScanResult record);
 
     List<ScanResult> list(ScanResult record);
+
+    Integer todayRecord();
+
+    Integer totalRecord();
+
+    Integer updateRecordState(ScanResult record);
 }

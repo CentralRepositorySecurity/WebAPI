@@ -15,4 +15,11 @@ public interface IScanResultService {
      * @return
      */
     List<ScanResult> list(ScanResult record, Integer page, Integer pageSize);
+
+    Integer todayRecord();
+
+    Integer totalRecord();
+
+    Integer updateRecordState(ScanResult record);
+
 }
